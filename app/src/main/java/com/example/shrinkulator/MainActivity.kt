@@ -35,8 +35,8 @@ class MainActivity : ComponentActivity() {
 
     private val myFlow: MutableStateFlow<List<CalcModel>> = MutableStateFlow(langs)
 
-    var weightState: MutableState<String> = mutableStateOf("")
-    var priceState: MutableState<String> = mutableStateOf("")
+    private var weightState: MutableState<String> = mutableStateOf("")
+    private var priceState: MutableState<String> = mutableStateOf("")
 
     private val myOnClick: () -> Unit = {
         println("@@@myOnClick")
